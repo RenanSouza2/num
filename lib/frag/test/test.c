@@ -2,6 +2,7 @@
 #include <assert.h>
 
 #include "../debug.h"
+#include "../../../utils/mem-report/bin/header.h"
 
 void test_frag_create()
 {
@@ -10,6 +11,9 @@ void test_frag_create()
     frag_p f = frag_create(1, (frag_p)2);
     assert(f->val == 1);
     assert(f->next == (frag_p)2);
+    free(f);
+
+    assert(mem_empty());
 }
 
 void test_frag()

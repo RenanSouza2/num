@@ -4,6 +4,9 @@
 #include "debug.h"
 
 #ifdef DEBUG
+
+#include "../../utils/mem-report/bin/header.h"
+
 #endif
 
 frag_p frag_create(uint64_t val, frag_p f_next)

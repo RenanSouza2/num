@@ -8,9 +8,10 @@ void test_frag_create()
 {
     printf("\n\t%s\t\t", __func__);
 
-    frag_p f = frag_create(1, (frag_p)2);
+    frag_p f = frag_create(1, 2, (frag_p)3);
     assert(f->val == 1);
-    assert(f->next == (frag_p)2);
+    assert(f->index == 2);
+    assert(f->next == (frag_p)3);
     free(f);
 
     assert(mem_empty());

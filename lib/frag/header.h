@@ -5,6 +5,6 @@
 
 PLACEHOLDER(frag);
 
-frag_p frag_create(uint64_t val, frag_p f_next);
+frag_p frag_create(uint64_t val, uint64_t index, frag_p f_next);
 
 #endif

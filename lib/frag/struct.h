@@ -7,7 +7,7 @@
 
 STRUCT(frag)
 {
-    uint64_t val;
+    uint64_t val, index;
     frag_p next;
 };
 
